@@ -1,0 +1,905 @@
+/* Barra superior */
+.top-bar {
+    background-color: #b35ea3; /* Morado más oscuro */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.top-bar .location-link {
+    color: #ffaaea; /* Morado más claro */
+    cursor: pointer;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+/* Barra de navegación principal */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f6a2bb;
+    padding: 10px 20px;
+    color: #fff;
+    position: relative;
+}
+
+.navbar-center {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente en el rectángulo */
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 200px; /* Tamaño fijo */
+}
+
+.search-bar input {
+    border: none;
+    padding: 5px;
+    outline: none;
+    width: 150px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.search-icon {
+    background: none;
+    border: none;
+    color: #555;
+    padding: 0 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.navbar-center {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.navbar-center a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.divider {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilo de logo en forma de banderín */
+.logo-container {
+    position: absolute;
+    top: -30px; /* Ajusta la posición para que se superponga ligeramente */
+    right: 20px; /* Posición del lado derecho */
+    background-color: #f071a1; /* Fondo rosado */
+    padding: 10px;
+    border-radius: 15px 15px 0 0; /* Bordes redondeados en la parte superior */
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%); /* Crea la forma de banderín */
+}
+
+.logo-icon {
+    width: 60px; /* Tamaño del logo */
+    height: 60px;
+    border-radius: 50%; /* Hace el logo redondo */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/*cuidapp*/
+
+
+.header-top {
+    background-color: #ffb6c1;
+    padding: 10px 0;
+}
+
+.header-top p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.header-top a {
+    color: #6a0dad;
+    text-decoration: none;
+}
+
+.header-logo-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header-logo-search .logo {
+    height: 50px;
+}
+
+.header-logo-search input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.header-logo-search .user-icon {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ff99cc;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #ff6699;
+    border-radius: 5px;
+}
+
+/*ESTO ES PARA AGRANDA LEVEMENTE, MUY IMPORTANTE !!!!!*/
+
+.producto-link img {
+    transition: transform 0.3s ease; /* Efecto de transición suave */
+}
+
+.producto-link img:hover {
+    transform: scale(1.05); /* Agranda la imagen al 110% */
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Estilos de la primera sección */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.tallas-prendas {
+    background-image: url('../imagenesGeneralCalcetas/flore.webp');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: left;
+}
+
+.overlay h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.overlay button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.overlay button:hover {
+    background-color: white;
+    color: black;
+}
+
+.tallas-prendas::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(57, 57, 57, 0.5); /* Ajusta el nivel de oscurecimiento */
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: relative;
+    z-index: 2; /* Coloca el contenido por encima de la superposición oscura */
+}
+
+/* Divisor de sección--------------------------------------------------------------- */
+.section-divider {
+    background-color: #ff5fba; /* Color rosa claro */
+    height: 35px; /* Altura del rectángulo */
+    width: 100%; /* Ancho completo */
+    margin: 0; /* Sin margen para que esté pegado */
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* Estilos para la sección de productosssssss */
+.productos {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.titulo-productos {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilos de la cuadrícula */
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* Estilo de cada producto */
+.producto-item {
+    text-align: center;
+}
+
+.producto-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.producto-item p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .grid-productos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-productos {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+
+/*Test de Prenda sexta aqui si*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.test-prenda {
+    background-color: #a64d79; /* Fondo púrpura */
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif; /* Estilo de fuente elegante */
+}
+
+.imagenes-circulares {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.imagenes-circulares img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Hacer las imágenes circulares */
+    object-fit: cover;
+    border: 4px solid white;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #f4b6c2;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e699b2;
+}
+.final-rect {
+    background-color: #ff66cc; /* Color rosa */
+    height: 25px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Barra Lateral agregarrrr----------------------------------------------------------------------- */
+/* Contenedor del icono del menú con fondo */
+.menu-icon-container {
+    background-color: #f6a2bb; /* Fondo rosa claro */
+    padding: 10px;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Estilo del ícono del menú */
+.menu-icon {
+    font-size: 1.5em;
+    color: #8b5e83; /* Color morado oscuro */
+}
+
+/* Estilo de la barra lateral */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+/* Estilo de los enlaces del menú lateral */
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #fcb3ea;
+}
+
+/* Botón de cierre del menú lateral */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 2em;
+    margin-left: 50px;
+    color: #fcb3ea;
+}
+
+
+
+
+
+/* Estilo del ícono del menú */
+.menu-icon {
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Barra lateral con fondo degradado y sombra */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #333, #4a4a4a); /* Degradado oscuro */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
+}
+
+/* Enlaces de la barra lateral */
+.sidebar a {
+    padding: 12px 32px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fff;
+    display: flex; /* Para alinear icono y texto */
+    align-items: center;
+    transition: 0.3s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Línea divisoria */
+}
+
+.sidebar a:hover {
+    color: #fcb3ea;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo al pasar el ratón */
+}
+
+/* Icono en cada enlace */
+.sidebar a i {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    font-size: 1.3em; /* Tamaño del icono */
+}
+
+/* Botón de cierre estilizado */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 2em;
+    color: #fcb3ea;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* DECORACION INICIO SESIÓN VENTANA EMERGENTE*/
+
+/* Estilos básicos para la ventana emergente */
+.modal {
+    display: none; /* Oculta la ventana emergente por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Ajuste para el botón de la flecha en el banner */
+.banner-arrow {
+    cursor: pointer;
+    /* Ajustes adicionales para el diseño de la flecha */
+}
+
+.card {
+    --main-color: #000;
+    --submain-color: #78858F;
+    --bg-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    width: 300px;
+    height: 384px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background: var(--bg-color);
+  }
+  
+  .card__img {
+    height: 192px;
+    width: 100%;
+  }
+  
+  .card__img svg {
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .card__avatar {
+    position: absolute;
+    width: 114px;
+    height: 114px;
+    background: var(--bg-color);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: calc(50% - 57px);
+  }
+  
+  .card__avatar svg {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .card__title {
+    margin-top: 60px;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--main-color);
+  }
+  
+  .card__subtitle {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--submain-color);
+  }
+  
+  .card__btn {
+    margin-top: 15px;
+    width: 76px;
+    height: 31px;
+    border: 2px solid var(--main-color);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 11px;
+    color: var(--main-color);
+    background: var(--bg-color);
+    text-transform: uppercase;
+    transition: all 0.3s;
+  }
+  
+  .card__btn-solid {
+    background: var(--main-color);
+    color: var(--bg-color);
+  }
+  
+  .card__btn:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+  }
+  
+  .card__btn-solid:hover {
+    background: var(--bg-color);
+    color: var(--main-color);
+  }
+
+
+/* finallllllll DECORACION INICIO SESIÓN VENTANA EMERGENTE*/
+  /* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Estilos del botón de carrito */
+.btn-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; /* Aumenta el tamaño del botón */
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+/* Tamaño del ícono dentro del botón */
+.icon-cart {
+    width: 30px; /* Aumenta el tamaño del ícono */
+    height: 36px;
+    transition: .2s linear;
+}
+
+.icon-cart path {
+    fill: rgb(240, 8, 8);
+    transition: .2s linear;
+}
+
+/* Tamaño del texto que muestra la cantidad */
+.btn-cart::after {
+    content: attr(data-quantity);
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    font-size: 16px; /* Tamaño un poco mayor para la cantidad */
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s linear;
+    top: 115%;
+}
+
+.btn-cart:hover > .icon-cart {
+    transform: scale(1.2);
+}
+
+.btn-cart:hover > .icon-cart path {
+    fill: rgb(206, 25, 143);
+}
+
+.btn-cart:hover::after {
+    visibility: visible;
+    opacity: 1;
+    top: 105%;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Estilo del menú lateral del carrito */
+.cart-sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff; /* Fondo blanco */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1000;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.cart-sidebar h2 {
+    padding-left: 32px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.cart-sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 2em;
+    color: #333;
+}
+
+.cart-items {
+    padding: 20px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2em;
+}
+
+.cart-footer {
+    padding: 20px 32px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.checkout-btn:hover {
+    background-color: #218838;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* Adicional Carritooooooo */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.remove-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.remove-btn:hover {
+    background-color: #c9302c;
+}
+
+.talla.selected {
+    background-color: #d81b60;
+    color: white;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* SECCIÓN CATEGORÍAS */
+
+.categorias {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.categorias h2 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.categoria-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    grid-template-rows: repeat(3, 200px); /* Tres filas de 200px */
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.categoria {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.categoria h3 {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.proximo {
+    background-color: #d3d3d3; /* Color gris para indicar que es "Próximamente" */
+    color: #333; /* Color del texto en el recuadro */
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/* Ajuste responsivo para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .categoria-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 200px); /* Seis filas para pantallas pequeñas */
+    }
+}
+
+.section-divider {
+    background-color: #ff66cc; /* Color rosa */
+    height: 30px;
+    width: 100%;
+    margin: 0;
+}
+
+.categoria-link .categoria {
+    transition: transform 0.3s ease;
+}
+
+.categoria-link .categoria:hover {
+    transform: scale(1.035); /* Agranda ligeramente al 105% */
+    z-index: 1; /* Mantiene el elemento en el frente */
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+

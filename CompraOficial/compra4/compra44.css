@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Fondo con imagen oscurecida */
+.background-image {
+    background: url('../faldas\ mujer\ modelar.jpg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Línea de tiempo centrada */
+.progress-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 700px;
+}
+
+.progress-step {
+    text-align: center;
+    color: #999;
+    font-weight: bold;
+}
+
+.progress-step::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ddd;
+    border: 3px solid #ddd;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.progress-step.completed::before {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.progress-line {
+    flex: 1;
+    height: 3px;
+    background-color: #ddd;
+}
+
+.progress-line.completed {
+    background-color: #28a745;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Botón de descarga */
+.download-btn, .back-btn {
+    background-color: #28a745;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.download-btn:hover, .back-btn:hover {
+    background-color: #218838;
+}
+
+.back-btn {
+    background-color: #007bff;
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para los iconos de emociones */
+.rating-container {
+    margin-bottom: 30px;
+}
+
+.rating-container p {
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.rating-form {
+    display: flex;
+    justify-content: center;
+}
+
+.svg {
+    fill: rgb(242, 242, 242);
+    height: 3.6rem;
+    width: 3.6rem;
+    margin: 0.2rem;
+    cursor: pointer;
+    transition: fill 0.3s ease;
+}
+
+.super-happy:checked + .svg {
+    fill: rgb(0, 204, 79);
+}
+
+.neutral:checked + .svg {
+    fill: rgb(232, 214, 0);
+}
+
+.super-sad:checked + .svg {
+    fill: rgb(239, 42, 16);
+}

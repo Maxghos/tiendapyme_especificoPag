@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método de Pago</title>
+    <link rel="stylesheet" href="compra33.css">
+</head>
+<body>
+    <!-- Fondo oscuro con imagen -->
+    <div class="background-image"></div>
+
+    <!-- Línea de tiempo de progreso -->
+    <div class="progress-container">
+        <div class="progress-step completed">Resumen de compra</div>
+        <div class="progress-line completed"></div>
+        <div class="progress-step completed">Datos</div>
+        <div class="progress-line completed"></div>
+        <div class="progress-step completed">Método y Compra</div>
+        <div class="progress-line"></div>
+        <div class="progress-step">Recibo</div>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <h1>Método de Pago</h1>
+
+        <div class="payment-options">
+            <!-- Opción de Débito deshabilitada -->
+            <label class="disabled">
+                <input type="radio" name="payment-method" value="debit" disabled>
+                Débito (Próximamente)
+            </label>
+            <!-- Opción de Transferencia -->
+            <label>
+                <input type="radio" name="payment-method" value="transfer">
+                Transferencia Bancaria
+            </label>
+        </div>
+
+        <!-- Detalles de transferencia -->
+        <div id="transfer-details" class="hidden">
+            <h2>Datos de Transferencia Bancaria</h2>
+            <p><strong>Banco:</strong> Banco Estado</p>
+            <p><strong>Cuenta:</strong> Cuenta Rut</p>
+            <p><strong>Titular:</strong> Consuelo Beatriz</p>
+            <p><strong>RUT:</strong> 17.319.896-5</p>
+            <p><strong>Correo:</strong> mrubioc@utem.cl</p>
+        </div>
+
+        <button id="next-btn" class="next-btn">Siguiente</button>
+    </div>
+
+    <script src="compra333.js"></script>
+</body>
+</html>

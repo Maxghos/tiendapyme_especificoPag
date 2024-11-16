@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Fondo con imagen oscurecida */
+.background-image {
+    background: url('../faldas\ mujer\ modelar.jpg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 200; /* Oscurece la imagen */
+}
+
+/* Estilos para la línea de tiempo de progreso */
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 700px;
+    margin: 40px 0;
+    padding: 10px 0;
+}
+
+.progress-step {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-step::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #989898;
+    border: 3px solid #555555;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.progress-step.completed::before {
+    background-color: #00ba2b;
+    border-color: #00ff3c;
+}
+
+.progress-line {
+    flex: 1;
+    height: 3px;
+    background-color: #ddd;
+    margin-top: -13px;
+}
+
+.progress-step.completed + .progress-line {
+    background-color: #28a745;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+    margin-left: 15px;
+    text-align: left;
+}
+
+.cart-item-details p {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.cart-item .remove-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-item .remove-btn:hover {
+    background-color: #c9302c;
+}
+
+.total-container {
+    margin: 15px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.continue-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.continue-btn:hover {
+    background-color: #218838;
+}
